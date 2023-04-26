@@ -36,7 +36,4 @@ def create_app(test_config=None):
     from .author_routes import authors_bp
     app.register_blueprint(authors_bp)
 
-    from .home_routes import home_page_bp
-    app.register_blueprint(home_page_bp)
-
     return app
